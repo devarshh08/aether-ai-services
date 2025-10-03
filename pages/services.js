@@ -1,19 +1,5 @@
 import Navbar from '../components/Navbar'  
-  
 export default function Services() {  
-  const services = [  
-    'AI Influencers', 'AI Ad Promos', 'AI Website Builder', 'AI Chatbot',  
-    'AI Data Analysis', 'AI CRM', 'AI Content Writing', 'AI Data Scraping and Cleaning'  
-  ]  
-  return <div>  
-    <Navbar />  
-    <main className="pt-24 px-4">  
-      <div className="container mx-auto py-12">  
-        <h1 className="text-5xl font-bold text-center mb-12">Our Services</h1>  
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">  
-          {services.map(s => <div key={s} className="card"><h3 className="text-xl font-semibold">{s}</h3></div>)}  
-        </div>  
-      </div>  
-    </main>  
-  </div>  
+  const services = [{title:'AI Influencers',desc:'Create engaging AI-powered influencer content'},{title:'AI Ad Promos',desc:'Optimize advertising with AI automation'},{title:'AI Website Builder',desc:'Build intelligent, responsive websites'},{title:'AI Chatbot',desc:'Deploy smart conversational agents'},{title:'AI Data Analysis',desc:'Extract insights from complex datasets'},{title:'AI CRM',desc:'Automate customer relationship management'},{title:'AI Content Writing',desc:'Generate high-quality content at scale'},{title:'AI Data Scraping',desc:'Extract and clean data efficiently'}]  
+  return <div><Navbar /><main className=\" pt-32 "px-4\><div className=\container" mx-auto py-12 "max-w-6xl\><div className=\text-center" "mb-16\><div className=\section-badge\>SERVICES</div><h1 className=\section-title\>Smarter Services, Built with AI</h1><p className=\text-gray-400\>Everything you need to automate operations, boost productivity</p></div><div className=\grid" md:grid-cols-2 lg:grid-cols-4 "gap-6\>{services.map(s=><div key={s.title} className=\card\><h3 className=\text-xl" font-bold "mb-3\>{s.title}</h3><p className=\text-gray-400" "text-sm\>{s.desc}</p></div>)}</div></div></main></div>  
 }  
