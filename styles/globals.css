@@ -1,103 +1,43 @@
-@tailwind base;@tailwind base;@tailwind base;
-
+@tailwind base;
 @tailwind components;
+@tailwind utilities;
 
-@tailwind utilities;@tailwind components;@tailwind components;
-
-
-
-body {@tailwind utilities;@tailwind utilities;
-
-  @apply bg-gradient-to-br from-gray-900 via-purple-900 to-blue-900 text-white min-h-screen;
-
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #4a148c 50%, #1e3a8a 100%);
+  color: white;
+  min-height: 100vh;
 }
 
-
-
-.glass {@layer base {@layer base {
-
-  @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl;
-
-}  body {  :root {
-
-
-
-.btn-primary {    @apply bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white min-h-screen;    --background: 240 10% 3.9%;
-
-  @apply px-6 py-3 bg-gradient-to-r from-primary to-secondary rounded-lg font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl;
-
-}  }    --foreground: 0 0% 98%;
-
-
-
-.card {}
-
-  @apply glass p-6 hover:bg-white/20 transition-all duration-300;
-
-}    --card: 240 10% 5%;
-
-
-@layer components {    --card-foreground: 0 0% 98%;
-
-  .glass {
-
-    @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl;    --popover: 240 10% 5%;
-
-  }    --popover-foreground: 0 0% 98%;
-
-  
-
-  .btn-primary {    --primary: 263 70% 60%;
-
-    @apply bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl;    --primary-foreground: 0 0% 100%;
-
-  }    
-
-      --primary-glow: 263 70% 70%;
-
-  .card {    
-
-    @apply glass p-6 hover:bg-white/15 transition-all duration-300 hover:scale-105;    --secondary: 200 80% 55%;
-
-  }    --secondary-foreground: 0 0% 100%;
-
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
 }
 
-    --muted: 240 10% 12%;
-    --muted-foreground: 240 5% 64.9%;
-
-    --accent: 180 80% 50%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 10% 15%;
-    --input: 240 10% 15%;
-    --ring: 263 70% 60%;
-
-    --radius: 0.75rem;
-  }
-
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
-  }
-  
-  .gradient-text {
-    @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
-  }
-  
-  .glass-card {
-    @apply bg-card/50 backdrop-blur-xl border border-border/50;
-  }
-  
-  .hover-glow {
-    @apply transition-all duration-300 hover:shadow-[0_0_40px_hsl(var(--primary)/0.3)];
-  }
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.btn-primary:hover {
+  opacity: 0.9;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
