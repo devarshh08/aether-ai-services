@@ -4,7 +4,7 @@ export default function Projects() {
   const projects = [
     {
       name:'AI Influencer',
-      url:'https://www.instagram.com/sweetvanillasyd/',
+      url:'https://drive.google.com/drive/folders/1KK_wqRyVfCfxlO6qZhy5nJH5YKbcJmN6?usp=sharing',
       metric1:'70%',
       label1:'increase in engagement',
       metric2:'45%',
